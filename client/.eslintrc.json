@@ -1,29 +1,73 @@
+// {
+//   "env": {
+//     "browser": true,
+//     "es2021": true
+//   },
+//   "extends": [
+//     "plugin:react/recommended",
+//     "airbnb",
+//     "airbnb/hooks",
+//     "eslint:recommended",
+//     "plugin:prettier/recommended"
+//   ],
+//   "overrides": [],
+//   "parserOptions": {
+//     "ecmaFeatures": {
+//       "jsx": true
+//     },
+//     "ecmaVersion": "latest",
+//     "sourceType": "module"
+//   },
+//   "plugins": ["react"],
+//   "rules": {
+//     "prettier/prettier": ["error", { "endOfLine": "auto" }],
+//     "react/prop-types": 0,
+//     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+//     "react/react-in-jsx-scope": "off",
+//     "no-unused-vars": "warn",
+//     "no-console": "warn",
+//     "react/jsx-props-no-spreading": [1, { "custom": "ignore" }],
+//     "react/function-component-definition": [
+//       2,
+//       { "namedcomponents": ["arrow-function", "function-declaration"] }
+//     ]
+//   }
+// }
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "airbnb/hooks",
     "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
-  "overrides": [],
   "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-uses-react": 0,
+    "import/no-unresolved": 0,
     "react/prop-types": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/react-in-jsx-scope": "off",
-    "no-unused-vars": "warn",
-    "no-console": "warn",
-    "react/jsx-props-no-spreading": [1, { "custom": "ignore" }],
-    "react/function-component-definition": [2, { "namedcomponents": "arrow-function" }]
+    "react/no-unescaped-entities": 0,
+    "prettier/prettier": [
+      "error",
+
+      {
+        "singleQuote": false,
+        "parser": "flow",
+        "trailingComma": "all",
+        "endOfLine": "auto"
+      }
+    ]
   }
 }
