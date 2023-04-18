@@ -11,36 +11,19 @@ import {
 } from "../styles/StyledFootBar";
 
 const FootBar = () => {
-  // const navigate = useNavigate();
-
   return (
     <div>
-      {/* <StyledFootBar> */}
       <StyledFootBar>
         <BigMenu>
           <FootMenu1>
-            {/* <ul
-                role="presentation"
-                onClick={() => navigate("/stackoverfoot")}
-                onKeyDown={this.handleKeyDown}
-              >
-                STACK OVERFLOW
-              </ul> */}
-            {/* <ul onClick={() => navigate("/stackoverfoot")}>STACK OVERFLOW</ul> */}
+            <ul>STACK OVERFLOW</ul>
             <ol>
               <ul>Questions</ul>
               <ul>Help</ul>
             </ol>
           </FootMenu1>
           <FootMenu2>
-            {/* <ul
-                role="presentation"
-                onClick={() => navigate("/productsfoot")}
-                onKeyDown={this.handleKeyDown}
-              >
-                PRODUCTS
-              </ul> */}
-            {/* <ul onClick={() => navigate("/productsfoot")}>PRODUCTS</ul> */}
+            <ul>PRODUCTS</ul>
             <ol>
               <ul>Teams</ul>
               <ul>Advertising</ul>
@@ -49,14 +32,7 @@ const FootBar = () => {
             </ol>
           </FootMenu2>
           <FootMenu3>
-            {/* <ul
-                role="presentation"
-                onClick={() => navigate("/companyfoot")}
-                onKeyDown={this.handleKeyDown}
-              >
-                COMPANY
-              </ul> */}
-            {/* <ul onClick={() => navigate("/companyfoot")}>COMPANY</ul> */}
+            <ul>COMPANY</ul>
             <ol>
               <ul>About</ul>
               <ul>Press</ul>
@@ -70,14 +46,7 @@ const FootBar = () => {
             </ol>
           </FootMenu3>
           <FootMenu4>
-            {/* <ul
-                role="presentation"
-                onClick={() => navigate("/stacknetworkfoot")}
-                onKeyDown={this.handleKeyDown}
-              >
-                STACK EXCHANGE NETWORK
-              </ul> */}
-            {/* <ul onClick={() => navigate("/stacknetworkfoot")}>STACK EXCHANGE NETWORK</ul> */}
+            <ul>STACK EXCHANGE NETWORK</ul>
             <ol>
               <ul>Technology</ul>
               <ul>Culture & recreation</ul>
@@ -89,7 +58,6 @@ const FootBar = () => {
               <ul>Data</ul>
             </ol>
           </FootMenu4>
-
           <FootMenu5>
             <ul>Blog</ul>
             <ul>Fackbook</ul>
@@ -100,7 +68,6 @@ const FootBar = () => {
         </BigMenu>
         <div>Site design logo 2023 Stack Exchange Inc; user contributions</div>
         <div>licensed under CC BY-SA. rev 2023.4.14.43390</div>
-        {/* </StyledFootBar> */}
       </StyledFootBar>
     </div>
   );
